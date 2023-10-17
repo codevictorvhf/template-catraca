@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="tela-catraca.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="name">Visão Geral</h1>
+      <nav class="nav">
+        <ul class="menu">
+          <li>
+            <span
+              id="menu"
+              onclick="clickMenu()"
+              class="material-symbols-outlined"
+              >menu</span
+            >
+            <ul class="nomes-alunos">
+              <li><a href="#">Giovana Silva</a></li>
+              <li><a href="#">Victor Henrique</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <div class="container-wrapper">
+          <div class="registro">
+            <p class="name-student">Giovana Silva</p>
+            <button class="ver-relatorio">
+              <a href="catraca2.html">Ver relatório</a>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="container-wrapper">
+          <div class="registro">
+            <p class="name-student">Victor Henrique</p>
+            <button class="ver-relatorio">
+              <a href="catraca2.html">Ver relatório</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      function clickMenu() {
+        // Obtemos a referência ao submenu
+        var submenu = document.querySelector(".nav .menu li ul");
+
+        // Alternamos a classe 'show' para exibir ou ocultar o submenu
+        submenu.classList.toggle("show");
+      }
+    </script>
+  </body>
+</html>
